@@ -170,7 +170,7 @@ def prsearch(f, df, x0, tol):
     answer_ = [xmin, fmin, neval, coordinates]
     return answer_
 
-tol = 1e-9
-print(prsearch(fH, dfH, np.array([[1.0], [0.0]]), tol)) # ~(3, 2) = 0
-print(prsearch(fR, dfR, np.array([[-2], [0.0]]), tol)) # (1, 1)
+#tol = 1e-9
+#print(prsearch(fH, dfH, np.array([[1.0], [0.0]]), tol)) # ~(3, 2) = 0
+#print(prsearch(fR, dfR, np.array([[-2], [0.0]]), tol)) # (1, 1)
 
