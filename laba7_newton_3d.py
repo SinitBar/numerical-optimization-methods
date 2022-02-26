@@ -76,14 +76,14 @@ def H(X, tol, df):
    dxdx = (df_x([x0 + deltaX, y0]) - df_x([x0 - deltaX, y0])) / (2 * deltaX)
    dydy = (df_y([x0, y0 + deltaX]) - df_y([x0, y0 - deltaX])) / (2 * deltaX)
    dxdy = (df_x([x0, y0 + deltaX]) - df_x([x0, y0 - deltaX])) / (2 * deltaX)
-   ddf = [[dxdx, dxdy], [dxdy, dydy]] # Hessian matrix
+   #ddf = [[dxdx, dxdy], [dxdy, dydy]] # Hessian matrix
    # to pass tests i did like this instead of 79 string:
    # Hessian matrix
-   #ddf = np.zeros((2, 2))
-   #ddf[0][0] = dxdx
-   #ddf[0][1] = dxdy
-   #ddf[1][0] = dxdy
-   #ddf[1][1] = dydy
+   ddf = np.zeros((2, 2))
+   ddf[0][0] = dxdx
+   ddf[0][1] = dxdy
+   ddf[1][0] = dxdy
+   ddf[1][1] = dydy
    # if in 79 str add [] over every element, see error like on site
    return ddf
 
@@ -119,14 +119,14 @@ def nsearch(f, df, x0, tol):
        # print(df(x_k))
         deltaX = np.linalg.lstsq(H0, df(x_k))[0]
         x_k = x_k - deltaX
-    #coords.append(x_k)
+    coords.append(x_k)
     xmin = x_k
     fmin = f(xmin)
     answer_ = [xmin, fmin, neval,  coords]
     return answer_
 
 
-tol = 0.001
-tol1 = 0.000000001
-print(nsearch(fH, dfH, [-2.0, -2.0], tol))
-print(nsearch(fR, dfR, [-1, -1], tol1)) 
+#tol = 0.001
+#tol1 = 0.000000001
+#print(nsearch(fH, dfH, [-2.0, -2.0], tol))
+#print(nsearch(fR, dfR, [-1, -1], tol1)) 
