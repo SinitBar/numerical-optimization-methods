@@ -30,8 +30,8 @@ def df(X):
     return v
 
 
-x0 = 1.3
-tol = 0.0000000001 # delta = 10^(-10) #change to 10^(-3)
+#x0 = 1.3
+#tol = 0.0000000001 # delta = 10^(-10) #change to 10^(-3)
 
 def grsearch(x0, tol):
 
@@ -69,4 +69,4 @@ def grsearch(x0, tol):
     answer_ = [xmin, fmin, neval, coords]
     return answer_
 
-grsearch(x0, tol)
+#grsearch(x0, tol)
