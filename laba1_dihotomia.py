@@ -27,4 +27,4 @@ def bsearch(interval, tol):
     answer_ = [xmin, fmin, neval, coords]
     return answer_
 
-print(bsearch(interval, tol))
+#print(bsearch(interval, tol))
