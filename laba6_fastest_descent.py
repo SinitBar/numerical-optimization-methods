@@ -134,7 +134,7 @@ def sdsearch(f, df, x0, tol):
         alpha = foundArray[0]
         deltaX = alpha * df_x_k
         x_k = x_k - deltaX
-        #coords.append(x_k)
+        coords.append(x_k)
         neval += 1
     xmin = x_k
     fmin = f(x_k)
@@ -142,7 +142,7 @@ def sdsearch(f, df, x0, tol):
     return answer_
 
 
-tol1 = 0.001
-tol2 = 0.00001
-print(sdsearch(fH, dfH, [1.3, 2], tol1))
-print(sdsearch(fR, dfR, [1.0, -2], tol2)) 
+#tol1 = 0.001
+#tol2 = 0.00001
+#print(sdsearch(fH, dfH, [1.3, 2], tol1))
+#print(sdsearch(fR, dfR, [1.0, -2], tol2)) 
