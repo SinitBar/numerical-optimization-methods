@@ -80,6 +80,6 @@ def nagsearch(f, df, x0, tol):
 
 
 
-x0 = np.array([[0.0], [1.0]])
-tol = 1e-8
-print(nagsearch(fH, dfH, x0, tol))
+#x0 = np.array([[0.0], [1.0]])
+#tol = 1e-8
+#print(nagsearch(fH, dfH, x0, tol))
