@@ -1,9 +1,9 @@
 import numpy as np
 
-f = lambda x: x ** 2 - 10 * np.cos(0.3 * np.pi * x) - 20
-df = lambda x: 2 * x + 3 * np.sin(0.3 * np.pi * x) * np.pi
-tol = 0.0000000001 # delta = 10^(-10)
-interval = [-2, 5]
+#f = lambda x: x ** 2 - 10 * np.cos(0.3 * np.pi * x) - 20
+#df = lambda x: 2 * x + 3 * np.sin(0.3 * np.pi * x) * np.pi
+#tol = 0.0000000001 # delta = 10^(-10)
+#interval = [-2, 5]
 
 def ssearch(interval, tol):
     a = interval[0]
@@ -25,4 +25,4 @@ def ssearch(interval, tol):
     answer_ = [xmin, fmin, neval, coords]
     return answer_
 
-print(ssearch(interval, tol))
+#print(ssearch(interval, tol))
