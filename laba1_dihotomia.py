@@ -1,11 +1,11 @@
 import numpy as np
 
-f = lambda x: 2 * x ** 2 - 9 * x - 31
-df = lambda x: 4 * x - 9
-tol = 0.0000000001 # delta = 10^(-10)
-a_start = -2
-b_end = 10
-interval = [a_start, b_end]
+#f = lambda x: 2 * x ** 2 - 9 * x - 31
+#df = lambda x: 4 * x - 9
+#tol = 0.0000000001 # delta = 10^(-10)
+#a_start = -2
+#b_end = 10
+#interval = [a_start, b_end]
 
 def bsearch(interval, tol):
     xmin = interval[0]
