@@ -203,6 +203,6 @@ def trustreg(f, df, x0, tol):
     return answer_
 
 
-tol = 1e-3
-print(trustreg(fH, dfH, np.array([[2.0], [1.0]]), tol))
-print(trustreg(fR, dfR, np.array([[-2], [0]]), tol))
+#tol = 1e-3
+#print(trustreg(fH, dfH, np.array([[2.0], [1.0]]), tol))
+#print(trustreg(fR, dfR, np.array([[-2], [0]]), tol))
