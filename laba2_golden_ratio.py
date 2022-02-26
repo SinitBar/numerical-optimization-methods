@@ -1,8 +1,8 @@
 import numpy as np
 
-f = lambda x: 2 * x ** 2 - 9 * x - 31
-tol = 0.0000000001 # delta = 10^(-10)
-interval = [-2, 10]
+#f = lambda x: 2 * x ** 2 - 9 * x - 31
+#tol = 0.0000000001 # delta = 10^(-10)
+#interval = [-2, 10]
 
 def gsearch(interval, tol):
     a = interval[0]
@@ -44,4 +44,4 @@ def gsearch(interval, tol):
     answer_ = [xmin, fmin, neval, coord]
     return answer_
 
-print(gsearch(interval, tol))
+#print(gsearch(interval, tol))
