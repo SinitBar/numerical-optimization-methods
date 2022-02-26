@@ -122,5 +122,5 @@ def bbsearch(f, df, x0, tol):
     answer_ = [xmin, fmin, neval, coords]
     return answer_
 
-tol = 1e-9 # 10^(-9)
-print(bbsearch(fR, dfR, np.array([[2.0], [-1.0]]), tol)) 
+#tol = 1e-9 # 10^(-9)
+#print(bbsearch(fR, dfR, np.array([[2.0], [-1.0]]), tol)) 
